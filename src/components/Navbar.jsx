@@ -1,16 +1,27 @@
-import React from 'react';
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center p-4 bg-white shadow-md sticky top-0 z-50">
-      <div className="text-2xl font-bold text-blue-600">DRS Academy</div>
-      <ul className="hidden md:flex space-x-6 text-gray-700">
-        <li><a href="#about" className="hover:text-blue-500">About</a></li>
-        <li><a href="#faculty" className="hover:text-blue-500">Faculty</a></li>
-        <li><a href="#achievements" className="hover:text-blue-500">Achievements</a></li>
-        <li><a href="#contact" className="hover:text-blue-500">Contact</a></li>
+    <motion.nav
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="flex justify-between items-center p-4 bg-white shadow-md sticky top-0 z-50"
+    >
+      <div className="text-2xl font-bold text-primary">
+        <Link to="/">DRS Academy</Link>
+      </div>
+      <ul className="hidden md:flex space-x-6 text-gray-700 text-md">
+        <li><a href="/">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#sitemap">Sitemap</a></li>
+        <li><Link to="/courses">Our Courses</Link></li>
+        <li><Link to="/admissions">Admissions</Link></li>
+        <li><Link to="/gallery">Gallery</Link></li>
+        <li><Link to="/contact-us">Contact Us</Link></li>
       </ul>
-    </nav>
+    </motion.nav>
   );
 };
 
