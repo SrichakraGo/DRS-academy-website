@@ -1,35 +1,34 @@
+// ✅ App.jsx (NO BrowserRouter here)
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Courses from './pages/Courses';
+import AboutUs from './pages/AboutUs';
+import Achievements from './pages/Achievements';
 import Admissions from './pages/Admissions';
-import ResultsAchievements from './pages/ResultsAchievements';
+import Brochure from './pages/Brochure';
 import Testimonials from './pages/Testimonials';
-import Gallery from './pages/Gallery';
 import ContactUs from './pages/ContactUs';
-import PaymentPortal from './pages/PaymentPortal';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import TermsConditions from './pages/TermsConditions';
-import FAQs from './pages/Faqs';
+import EnrollNow from './pages/EnrollNow';
+
+
 
 function App() {
   return (
-    <div className="font-sans">
+    <div className="font-sans min-h-screen flex flex-col">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/courses" element={<Courses />} />
-        <Route path="/admissions" element={<Admissions />} />
-        <Route path="/results-achievements" element={<ResultsAchievements />} />
-        <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/contact-us" element={<ContactUs />} />
-        <Route path="/payment-portal" element={<PaymentPortal />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/terms-conditions" element={<TermsConditions />} />
-        <Route path="/faqs" element={<FAQs />} />
-      </Routes>
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/achievements" element={<Achievements />} />
+          <Route path="/admissions" element={<Admissions />} />
+          <Route path="/brochure" element={<Brochure />} />
+          <Route path="/testimonial" element={<Testimonials />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/enroll-now" element={<EnrollNow />} />
+        </Routes>
+      </main>
       <Footer />
     </div>
   );
