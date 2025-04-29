@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 const AboutUs = () => {
   return (
     <div className="min-h-screen flex flex-col bg-white">
-      <Navbar />
+
       
       <main className="flex-grow">
         {/* Hero Banner */}
@@ -155,7 +155,7 @@ const AboutUs = () => {
         </section>
       </main>
 
-      <Footer />
+
     </div>
   );
 };

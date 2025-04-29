@@ -38,7 +38,7 @@ const EnrollNow = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
-      <Navbar />
+
       
       <main className="flex-grow">
         {/* Hero Section */}
@@ -314,7 +314,7 @@ const EnrollNow = () => {
         </section>
       </main>
 
-      <Footer />
+
     </div>
   );
 };

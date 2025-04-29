@@ -50,7 +50,7 @@ const Testimonials = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
-      <Navbar />
+
       
       <main className="flex-grow">
         {/* Hero Section */}
@@ -146,7 +146,6 @@ const Testimonials = () => {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 };
