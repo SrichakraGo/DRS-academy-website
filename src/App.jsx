@@ -1,4 +1,6 @@
 // ✅ App.jsx (NO BrowserRouter here)
+import ScrollToTop from './components/ScrollToTop';
+
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -18,6 +20,7 @@ function App() {
     <div className="font-sans min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />
