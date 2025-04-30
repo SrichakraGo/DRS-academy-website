@@ -12,6 +12,9 @@ import Brochure from './pages/Brochure';
 import Testimonials from './pages/Testimonials';
 import ContactUs from './pages/ContactUs';
 import EnrollNow from './pages/EnrollNow';
+import Courses from './pages/Courses'; 
+
+
 
 
 
@@ -30,6 +33,7 @@ function App() {
           <Route path="/testimonial" element={<Testimonials />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/enroll-now" element={<EnrollNow />} />
+          <Route path="/courses" element={<Courses />} />
         </Routes>
       </main>
       <Footer />
