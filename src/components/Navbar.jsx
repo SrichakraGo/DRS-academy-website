@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   return (
@@ -9,9 +10,11 @@ const Navbar = () => {
       transition={{ duration: 1 }}
       className="flex justify-between items-center p-4 bg-white shadow-md sticky top-0 z-50"
     >
-      {/* Logo */}
-      <div className="text-2xl font-bold text-[#0d2a66]">
-        <Link to="/">DRS Academy</Link>
+      <div className="flex items-center space-x-2">
+        <img src={logo} alt="DRS Logo" className="w-10 h-10 object-contain" />
+        <Link to="/" className="text-2xl font-bold text-gray-700">
+          DRS Academy
+        </Link>
       </div>
 
       {/* Navigation Links */}

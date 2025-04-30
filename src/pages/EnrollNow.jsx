@@ -1,8 +1,43 @@
 import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import axios from 'axios';
+import { useState } from 'react';
 
 const EnrollNow = () => {
+  const [formData, setFormData] = useState({
+    fullName: '',
+    parentName: '',
+    email: '',
+    phone: '',
+    currentClass: '',
+    course: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post('http://localhost:5000/api/enroll', formData);
+      alert("✅ Enrollment submitted successfully!");
+      setFormData({
+        fullName: '',
+        parentName: '',
+        email: '',
+        phone: '',
+        currentClass: '',
+        course: '',
+        message: ''
+      });
+    } catch (err) {
+      console.error(err);
+      alert("❌ Failed to submit. Please try again.");
+    }
+  };
   const courses = [
     {
       name: "JEE Foundation (Classes 8-10)",
@@ -158,7 +193,7 @@ const EnrollNow = () => {
           <div className="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-gray-200">
             <h2 className="text-3xl font-bold text-center text-[#0d2a66] mb-8">Enrollment Form</h2>
             
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="full-name" className="block text-gray-700 font-medium mb-2">
@@ -167,6 +202,9 @@ const EnrollNow = () => {
                   <input
                     type="text"
                     id="full-name"
+                    name="fullName"
+                    value={formData.fullName}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f27b06] focus:border-transparent"
                     placeholder="Enter your full name"
                     required
@@ -180,6 +218,9 @@ const EnrollNow = () => {
                   <input
                     type="text"
                     id="parent-name"
+                    name="parentName"
+                    value={formData.parentName}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f27b06] focus:border-transparent"
                     placeholder="Enter parent/guardian name"
                     required
@@ -195,6 +236,9 @@ const EnrollNow = () => {
                   <input
                     type="email"
                     id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f27b06] focus:border-transparent"
                     placeholder="Enter your email"
                     required
@@ -208,6 +252,9 @@ const EnrollNow = () => {
                   <input
                     type="tel"
                     id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f27b06] focus:border-transparent"
                     placeholder="Enter phone number"
                     required
@@ -221,6 +268,9 @@ const EnrollNow = () => {
                 </label>
                 <select
                   id="current-class"
+                  name="currentClass"
+                  value={formData.currentClass}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f27b06] focus:border-transparent"
                   required
                 >
@@ -239,6 +289,9 @@ const EnrollNow = () => {
                 </label>
                 <select
                   id="course"
+                  name="course"
+                  value={formData.course}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f27b06] focus:border-transparent"
                   required
                 >
@@ -256,6 +309,9 @@ const EnrollNow = () => {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   rows="3"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f27b06] focus:border-transparent"
                   placeholder="Any special requirements or questions"

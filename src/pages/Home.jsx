@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import logoBg from '../assets/logo.png';
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="bg-[#0d2a66] text-white py-16 px-4"
+          className="bg-[#0d2a66] text-white py-16 px-4 "
         >
           <div className="container mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to DRS Academy</h1>

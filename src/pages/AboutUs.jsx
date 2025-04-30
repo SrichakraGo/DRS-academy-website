@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -11,7 +12,14 @@ const AboutUs = () => {
         {/* Hero Banner */}
         <section className="bg-[#0d2a66] text-white py-16 px-4">
           <div className="container mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">About DRS Academy</h1>
+          <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-4xl md:text-5xl font-bold mb-4"
+            >
+              About DRS Academy
+            </motion.h1>
             <p className="text-xl md:text-2xl max-w-2xl mx-auto">
               Your trusted partner in academic excellence since 2010
             </p>

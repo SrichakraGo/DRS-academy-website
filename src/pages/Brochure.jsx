@@ -94,7 +94,7 @@ const Brochure = () => {
                 ))}
               </div>
 
-              <div className="space-y-4">
+              <div className="flex flex-wrap gap-4">
                 <motion.a
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
