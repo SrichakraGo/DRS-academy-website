@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-=======
-// ✅ App.jsx (NO BrowserRouter here)
-import ScrollToTop from './components/ScrollToTop';
 
->>>>>>> b4895c42cf74a1f3d5a2feb29fab7479cec224fa
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -18,7 +13,7 @@ import EnrollNow from './pages/EnrollNow';
 import AdminLogin from './pages/AdminLogin';
 import AdminDashboard from './pages/AdminDashboard';
 import Courses from './pages/Courses'; 
-
+import ScrollToTop from './components/ScrollToTop';
 
 
 
