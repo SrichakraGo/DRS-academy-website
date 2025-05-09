@@ -21,7 +21,7 @@ const AboutUs = () => {
               About DRS Academy
             </motion.h1>
             <p className="text-xl md:text-2xl max-w-2xl mx-auto">
-              Your trusted partner in academic excellence since 2010
+            Your premier destination for IIT-JEE, NEET, and Olympiad success
             </p>
           </div>
         </section>
@@ -39,8 +39,7 @@ const AboutUs = () => {
                 <h2 className="text-2xl font-bold">Our Mission</h2>
               </div>
               <p className="text-lg">
-                To empower students through innovative teaching methods and personalized attention, 
-                helping them achieve their academic goals in competitive exams.
+              At DRS IIT-JEE NEET Academy, our mission is to provide quality education that empowers students to achieve their academic goals through concept clarity and regular practice. We strive to create a learning environment that fosters intellectual growth, creativity, and critical thinking, enabling students to excel in competitive exams like IIT-JEE and NEET.
               </p>
             </div>
 
@@ -54,8 +53,7 @@ const AboutUs = () => {
                 <h2 className="text-2xl font-bold">Our Vision</h2>
               </div>
               <p className="text-lg">
-                To be Hyderabad's premier coaching institute, recognized for transforming students 
-                into top performers and future leaders through excellence in competitive exam preparation.
+              Our vision is to be Hyderabad's premier coaching institute recognized for excellence in competitive exam preparation. We aim to nurture young minds, build strong conceptual foundations, and produce future leaders in science and technology. By consistently delivering high-quality education and support, we aspire to make a positive impact on the lives of our students and contribute to the advancement of society.
               </p>
             </div>
           </div>

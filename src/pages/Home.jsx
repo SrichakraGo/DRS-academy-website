@@ -20,7 +20,7 @@ const Home = () => {
           <div className="container mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to DRS Academy</h1>
             <p className="text-xl md:text-2xl max-w-2xl mx-auto mb-8">
-              Your premier destination for IIT-JEE, NEET, and Olympiad success
+            Perfect Destination for Perfect Future
             </p>
             <motion.a
               whileHover={{ scale: 1.05 }}
@@ -89,20 +89,19 @@ const Home = () => {
             >
               <h2 className="text-3xl font-bold text-[#0d2a66] mb-6">About DRS Academy</h2>
               <p className="text-lg text-gray-700 mb-6">
-                Founded by Dr. P. Ranjith Reddy, DRS Academy has been transforming students into top performers since 2010 through innovative teaching methodologies and personalized attention.
+              DRS Academy is a premier institute dedicated to empowering students for success in IIT-JEE and NEET. Since its founding in 2010 by Dr. P. Ranjith Reddy, we have established a proven track record of excellence, helping numerous students achieve their academic goals. Our team of expert faculty provides personalized attention to each student, ensuring they receive the support needed to excel. With limited class sizes and regular assessments, we foster a learning environment that promotes academic growth and success. Join us at DRS Academy and take the first step towards a brighter future.
               </p>
               <div className="grid md:grid-cols-2 gap-8 mt-8">
                 <div className="bg-white p-6 rounded-lg shadow-sm">
                   <h3 className="text-xl font-bold text-[#f27b06] mb-3">Our Mission</h3>
                   <p className="text-gray-700">
-                    To provide quality education that empowers students to achieve their academic goals through concept clarity and regular practice.
+                  At DRS IIT-JEE NEET Academy, our mission is to provide quality education that empowers students to achieve their academic goals through concept clarity and regular practice. We strive to create a learning environment that fosters intellectual growth, creativity, and critical thinking, enabling students to excel in competitive exams like IIT-JEE and NEET.
                   </p>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-sm">
                   <h3 className="text-xl font-bold text-[#2650a8] mb-3">Our Vision</h3>
                   <p className="text-gray-700">
-                    To be Hyderabad's premier coaching institute recognized for excellence in competitive exam preparation.
-                  </p>
+                  Our vision is to be Hyderabad's premier coaching institute recognized for excellence in competitive exam preparation. We aim to nurture young minds, build strong conceptual foundations, and produce future leaders in science and technology. By consistently delivering high-quality education and support, we aspire to make a positive impact on the lives of our students and contribute to the advancement of society. </p>
                 </div>
               </div>
             </motion.div>
@@ -114,9 +113,9 @@ const Home = () => {
           <h2 className="text-3xl font-bold text-center text-[#0d2a66] mb-12">What Our Students Say</h2>
           <div className="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-md border-l-4 border-[#f27b06]">
             <p className="text-gray-700 italic mb-4">
-              "DRS Academy's faculty and test series helped me secure AIR 112 in JEE Advanced. The personalized attention made all the difference!"
+"This is Gouthami. I got rank 556 in IIT JEE Advanced 2022. I'm really thankful to Ranjith Sir for helping me achieve this. Chemistry is one of the scoring subjects in JEE Advanced. Sir has helped me a lot in building up my basics in Chemistry. Sir gave me really good material which has helped me boost my score in Chemistry. Sir has motivated me a lot during my whole JEE preparation whenever I felt low. Thank you so much, Sir, for everything."
             </p>
-            <p className="font-bold text-[#0d2a66]">- Rahul Sharma, IIT Bombay</p>
+            <p className="font-bold text-[#0d2a66]">- Gouthami, AIR 556 IIT-JEE Advanced 2022</p>
             <div className="text-center mt-6">
               <a href="/testimonials" className="text-[#f27b06] font-medium hover:underline">
                 Read More Testimonials →
