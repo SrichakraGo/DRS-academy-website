@@ -1,4 +1,3 @@
-// ✅ App.jsx (NO BrowserRouter here)
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -10,7 +9,8 @@ import Brochure from './pages/Brochure';
 import Testimonials from './pages/Testimonials';
 import ContactUs from './pages/ContactUs';
 import EnrollNow from './pages/EnrollNow';
-
+import AdminLogin from './pages/AdminLogin';
+import AdminDashboard from './pages/AdminDashboard';
 
 
 function App() {
@@ -27,6 +27,8 @@ function App() {
           <Route path="/testimonial" element={<Testimonials />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/enroll-now" element={<EnrollNow />} />
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path="/admin/dashboard" element={<AdminDashboard />} />
         </Routes>
       </main>
       <Footer />
