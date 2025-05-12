@@ -117,7 +117,7 @@ const Home = () => {
             </p>
             <p className="font-bold text-[#0d2a66]">- Gouthami, AIR 556 IIT-JEE Advanced 2022</p>
             <div className="text-center mt-6">
-              <a href="/testimonials" className="text-[#f27b06] font-medium hover:underline">
+              <a href="/testimonial" className="text-[#f27b06] font-medium hover:underline">
                 Read More Testimonials →
               </a>
             </div>

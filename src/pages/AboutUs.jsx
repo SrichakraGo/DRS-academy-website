@@ -68,11 +68,11 @@ const AboutUs = () => {
               <div>
                 <h3 className="text-2xl font-semibold text-[#0d2a66] mb-4">From Humble Beginnings</h3>
                 <p className="text-gray-700 mb-4">
-                  Founded in 2010 with just 2 classrooms and 5 faculty members, DRS Academy has grown 
+                  Founded in 2010 with just 2 classrooms and 3 faculty members, DRS Academy has grown 
                   to become one of Hyderabad's most trusted coaching institutes.
                 </p>
                 <p className="text-gray-700">
-                  Our student-first approach and proven results have helped over 5,000 students 
+                  Our student-first approach and proven results have helped over 3,000 students 
                   secure admissions in top institutions across India.
                 </p>
               </div>
@@ -83,15 +83,15 @@ const AboutUs = () => {
                   <p className="text-gray-600">Years Experience</p>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow text-center border-t-4 border-[#2650a8]">
-                  <p className="text-4xl font-bold text-[#0d2a66]">5000+</p>
+                  <p className="text-4xl font-bold text-[#0d2a66]">3000+</p>
                   <p className="text-gray-600">Students Trained</p>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow text-center border-t-4 border-[#2650a8]">
-                  <p className="text-4xl font-bold text-[#0d2a66]">100+</p>
+                  <p className="text-4xl font-bold text-[#0d2a66]">80+</p>
                   <p className="text-gray-600">Toppers Created</p>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow text-center border-t-4 border-[#f27b06]">
-                  <p className="text-4xl font-bold text-[#0d2a66]">25+</p>
+                  <p className="text-4xl font-bold text-[#0d2a66]">15+</p>
                   <p className="text-gray-600">Expert Faculty</p>
                 </div>
               </div>
@@ -99,33 +99,129 @@ const AboutUs = () => {
           </div>
         </section>
 
-        {/* Faculty Section */}
-        <section className="container mx-auto px-4 py-12">
-          <h2 className="text-3xl font-bold text-center text-[#0d2a66] mb-12">Meet Our Expert Faculty</h2>
-          
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3].map((item) => (
-              <div key={item} className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow">
-                <div className="h-64 bg-[#031d49] flex items-center justify-center">
-                  <span className="text-white text-4xl">👨‍🏫</span>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-[#0d2a66]">Dr. Faculty Member</h3>
-                  <p className="text-[#f27b06] font-medium mb-3">Subject Specialist</p>
-                  <p className="text-gray-600 mb-4">
-                    {item === 1 ? "15+ years experience in JEE/NEET coaching" : 
-                     item === 2 ? "Former IIT professor with research background" : 
-                     "National level competitive exam expert"}
-                  </p>
-                  <div className="flex space-x-2">
-                    <span className="bg-[#f0f5ff] text-[#2650a8] px-3 py-1 rounded-full text-sm">IIT Alumni</span>
-                    <span className="bg-[#fff0e6] text-[#f27b06] px-3 py-1 rounded-full text-sm">10+ Years</span>
-                  </div>
-                </div>
-              </div>
+
+{/* Faculty Section */}
+<section className="container mx-auto px-4 py-12">
+  <h2 className="text-3xl font-bold text-center text-[#0d2a66] mb-12">Meet Our Expert Faculty</h2>
+
+  {/* Highlighted Director - Large Card */}
+  <div className="max-w-2xl mx-auto mb-16">
+    <div className="bg-white rounded-xl shadow-2xl overflow-hidden border-2 border-[#f27b06] hover:shadow-xl transition-all duration-300">
+      <div className="h-80 bg-[#031d49] flex items-center justify-center">
+        <span className="text-white text-6xl">👨‍🏫</span>
+      </div>
+      <div className="p-8 text-center">
+        <h3 className="text-3xl font-bold text-[#0d2a66]">Dr. Palreddy Ranjith Reddy</h3>
+        <p className="text-[#f27b06] text-xl font-semibold mb-4">Founder & Director, M.Sc., Ph.D., Chemistry Department</p>
+        <p className="text-gray-600 text-lg mb-6">
+          Dr. P. Ranjith Reddy epitomizes dedication and passion in education. With a Ph.D. in Organic Chemistry from Osmania University and over a decade of experience teaching Chemistry for IIT-JEE (Mains-Advanced) and NEET, he brings unmatched expertise to his students. His research includes 13 published papers, earning him national and international recognition. As the director of a premier junior college, Dr. Reddy has mentored countless students toward success in top IITs and medical colleges. A true role model, his integrity and devotion inspire all who learn from him.
+        </p>
+        <div className="flex justify-center space-x-3">
+          <span className="bg-[#f0f5ff] text-[#2650a8] px-4 py-2 rounded-full text-base font-medium">Director</span>
+          <span className="bg-[#fff0e6] text-[#f27b06] px-4 py-2 rounded-full text-base font-medium">20+ Years</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Other Faculty Members - Smaller Uniform Cards */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+    {[
+      {
+        name: "Mr. Y V Prasadd",
+        subject: "Mathematics Department",
+        bio: "12+ yrs exp., ex-AKASH, BANSAL, NARAYANA Faculty",
+        tags: ["IIT-JEE Faculty", "12+ Years"],
+      },
+      {
+        name: "Mr. C. S. Deekshith",
+        subject: "Mathematics Department",
+        bio: "22+ yrs exp., ex-NALANDA, SRI GAYATRI, NANO, NARAYANA Faculty",
+        tags: ["IIT-JEE Faculty", "22+ Years"],
+      },
+      {
+        name: "Mr. Vinod Parasa",
+        subject: "Physics Department",
+        bio: "14+ yrs exp., ex-GATE, IES Faculty",
+        tags: ["IIT-JEE & NEET Faculty", "14+ Years"],
+      },
+    ].map((fac, index) => (
+      <div
+        key={index}
+        className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-all duration-300"
+      >
+        <div className="h-48 bg-[#031d49] flex items-center justify-center">
+          <span className="text-white text-3xl">👨‍🏫</span>
+        </div>
+        <div className="p-4">
+          <h3 className="text-lg font-bold text-[#0d2a66]">{fac.name}</h3>
+          <p className="text-[#f27b06] text-sm font-medium mb-2">{fac.subject}</p>
+          <p className="text-gray-600 text-xs mb-3">{fac.bio}</p>
+          <div className="flex flex-wrap gap-2">
+            {fac.tags.map((tag, i) => (
+              <span
+                key={i}
+                className={`px-2 py-1 rounded-full text-xs ${
+                  tag.includes("Years")
+                    ? "bg-[#fff0e6] text-[#f27b06]"
+                    : "bg-[#f0f5ff] text-[#2650a8]"
+                }`}
+              >
+                {tag}
+              </span>
             ))}
           </div>
-        </section>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  {/* Bottom Row Faculty - Same Small Size */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mx-auto max-w-2xl">
+    {[
+      {
+        name: "Mr. Vasanth",
+        subject: "Botany Department",
+        bio: "12+ yrs exp., ex-SAKETA, VASAVI, BANSAL, NARAYANA Faculty",
+        tags: ["NEET Faculty", "12+ Years"],
+      },
+      {
+        name: "Ms. L. Pranitha",
+        subject: "Zoology Department",
+        bio: "11+ yrs exp., ex-SRI CHAITANYA Faculty",
+        tags: ["NEET Faculty", "11+ Years"],
+      },
+    ].map((fac, index) => (
+      <div
+        key={index}
+        className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-all duration-300"
+      >
+        <div className="h-48 bg-[#031d49] flex items-center justify-center">
+          <span className="text-white text-3xl">👨‍🏫</span>
+        </div>
+        <div className="p-4">
+          <h3 className="text-lg font-bold text-[#0d2a66]">{fac.name}</h3>
+          <p className="text-[#f27b06] text-sm font-medium mb-2">{fac.subject}</p>
+          <p className="text-gray-600 text-xs mb-3">{fac.bio}</p>
+          <div className="flex flex-wrap gap-2">
+            {fac.tags.map((tag, i) => (
+              <span
+                key={i}
+                className={`px-2 py-1 rounded-full text-xs ${
+                  tag.includes("Years")
+                    ? "bg-[#fff0e6] text-[#f27b06]"
+                    : "bg-[#f0f5ff] text-[#2650a8]"
+                }`}
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
 
         {/* Accreditation */}
         <section className="bg-[#011032] text-white py-12">
